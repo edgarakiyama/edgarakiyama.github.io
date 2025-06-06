@@ -30,8 +30,8 @@ body {
 .name {
   font-size: inherit;
   font-weight: inherit;
-  margin-top: 80px;     /* 👈 追加：上に余白を作る */
-  margin-bottom: 48px;  /* 下の余白もそのままキープ */
+  margin-top: 50px;     /* 👈 追加：上に余白を作る */
+  margin-bottom: 50px;  /* 下の余白もそのままキープ */
 }
 
 .role {
@@ -121,10 +121,12 @@ body {
 }
 
 .main-thumbnail {
+  margin-top: 50px;     /* 👈 追加：上に余白を作る */
+  margin-bottom: 50px;
   max-width: 150px;
   width: 100%;
   height: auto;
-  margin: 40px auto;
+  margin: 100px;
   display: block;
   border: 1.5px solid #000; /* 👈 枠線を追加 */
 }
@@ -143,4 +145,11 @@ body {
   .contact p {
     font-size: 9px;
   }
+}
+
+.header-text {
+  max-width: 300px;       /* 👈 .main-thumbnail の max-width に合わせる */
+  font-size: 12px;
+  margin: 0 auto 32px;    /* 中央揃え + 下余白 */
+  text-align: center;
 }
