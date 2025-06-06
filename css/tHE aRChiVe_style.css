@@ -1,0 +1,18 @@
+html, body {
+  height: auto;              /* ← 高さを制限しない */
+  min-height: 200vh;         /* 画面の高さは最低限確保 */
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;        /* 横スクロールを防ぐ */
+  background-color: #000;    /* 黒背景（作品ページ用） */
+  color: #fff;
+}
+
+.full-img {
+  display: block;
+  width: 100%;           /* ← 画面の幅に合わせて広がる */
+  height: auto;          /* ← 画像の縦横比を維持する */
+  max-width: 90vw;       /* ← 画面幅の90%までに制限（より柔軟） */
+  margin: 0 auto;
+  padding-bottom: 32px;
+}
