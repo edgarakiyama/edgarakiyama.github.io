@@ -52,3 +52,24 @@ body {
 .spacer {
   height: 80px;  /* ← 必要な余白量に応じて調整可 */
 }
+
+@media (max-width: 768px) {
+  body {
+    padding: 0 16px;
+  }
+
+  .container {
+    max-width: 100%;
+    font-size: 15px;
+  }
+
+  .role {
+    font-size: 0.85rem;
+    padding: 4px 12px;
+  }
+
+  .contact p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+}
