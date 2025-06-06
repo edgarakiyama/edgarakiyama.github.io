@@ -6,24 +6,25 @@ html, body {
 
 body {
   font-family: 'A-OTF-RyuminPr5-Regular', serif;
-  font-weight: 400;
   font-size: 16px;
   letter-spacing: 0.03em;
-  background-color: #fff;
   color: #000;
+  background-color: #fff;
+
   display: flex;
   justify-content: center;
   align-items: center;
 
-  min-height: 100vh;
+  min-height: 100vh;       /* 通常用 */
+  min-height: 100dvh;      /* モバイル最適用（対応ブラウザ） */
   text-align: center;
 }
 
-.container {
-  max-width: 600px;        /* 👈 内容の幅を制限 */
-  width: 100%;
-  padding: 20px;
-  box-sizing: border-box;
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .name {
