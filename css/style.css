@@ -1,17 +1,21 @@
-body {
+html, body {
   margin: 0;
   padding: 0;
+  height: 100%;
+}
+
+body {
   font-family: 'A-OTF-RyuminPr5-Regular', serif;
   font-weight: 400;
   font-size: 16px;
   letter-spacing: 0.03em;
   background-color: #fff;
   color: #000;
-  min-height: 100vh;
-
   display: flex;
   justify-content: center;
   align-items: center;
+
+  min-height: 100vh;
   text-align: center;
 }
 
