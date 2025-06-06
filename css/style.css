@@ -118,3 +118,27 @@ body {
   background-color: #000;
   color: #fff;  /* 文字が読めるように白に */
 }
+
+.main-thumbnail {
+  max-width: 100px;     /* ← 画像サイズを小さく */
+  width: 100%;
+  height: auto;
+  margin: 40px auto;
+  display: block;
+}
+
+.contact p {
+  font-size: 10px;       /* ← 元の半分くらいのサイズに */
+  line-height: 1.3;
+}
+
+@media (max-width: 768px) {
+  .main-thumbnail {
+    max-width: 200px;
+    margin: 32px auto;
+  }
+
+  .contact p {
+    font-size: 9px;
+  }
+}
