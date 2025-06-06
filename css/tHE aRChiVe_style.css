@@ -1,4 +1,6 @@
 html, body {
+  margin-top: 80px;     /* 👈 追加：上に余白を作る */
+  margin-bottom: 48px;  
   height: auto;              /* ← 高さを制限しない */
   min-height: 200vh;         /* 画面の高さは最低限確保 */
   margin: 0;
@@ -9,6 +11,8 @@ html, body {
 }
 
 .full-img {
+  margin-top: 80px;     /* 👈 追加：上に余白を作る */
+  margin-bottom: 48px;
   display: block;
   width: 100%;           /* ← 画面の幅に合わせて広がる */
   height: auto;          /* ← 画像の縦横比を維持する */
