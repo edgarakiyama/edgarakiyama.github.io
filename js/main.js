@@ -1,0 +1,1 @@
+console.log("edgar akiyama site loaded.");

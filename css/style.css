@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'A-OTF-RyuminPr5-Regular', serif;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  background-color: #fff;
+  color: #000;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  text-align: center;
+  padding: 40px;
+}
+
+.name {
+  font-size: inherit;
+  font-weight: inherit;
+  margin-bottom: 48px;  /* ← 少し広げた（40px → 48px） */
+}
+
+.role {
+  display: inline-block;
+  border: 1.5px solid #000;
+  border-radius: 24px;
+  padding: 4px 14px;
+  font-size: 0.9rem;
+  margin-bottom: 30px;
+}
+
+.contact p {
+  margin: 4px 0;
+  font-size: 15.3px;  /* 👈 約0.5pt小さいサイズ */
+  font-weight: inherit;
+  line-height: 1.2;
+}
+
+@font-face {
+  font-family: 'A-OTF-RyuminPr5-Regular';
+  src: url('fonts/A-OTF-RyuminPr5/A-OTF-RyuminPr5-Regular.otf') format('truetype');
+}
+
+.spacer {
+  height: 80px;  /* ← 必要な余白量に応じて調整可 */
+}
