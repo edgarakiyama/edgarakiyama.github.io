@@ -149,7 +149,7 @@ body {
 
 .header-text {
   max-width: 300px;       /* 👈 .main-thumbnail の max-width に合わせる */
-  font-size: 12px;
+  font-size: 10px;
   margin: 0 auto 32px;    /* 中央揃え + 下余白 */
   text-align: center;
 }
