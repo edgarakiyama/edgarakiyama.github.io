@@ -1,0 +1,100 @@
+/* フォント設定 */
+@font-face {
+  font-family: 'GRyumin';
+  src: url('../fonts/G-OTF-GRyuminPro-Light.otf') format('opentype');
+}
+
+html, body {
+  font-family: 'GRyumin', serif;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+}
+
+body {
+  font-feature-settings: "kern";
+  font-kerning: normal;
+}
+
+/* レイアウト全体 */
+.container {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.left-column {
+  font-size: 12px;  /* ← ここで全体の文字サイズを小さく調整 */
+  line-height: 1.5;
+  width: 50%;
+  padding-left: 24px; /* ← 左に少しスペースを追加 */
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  overflow-y: auto;
+}
+
+/* 右カラム：調整 */
+.right-column {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 画像サイズ調整 */
+.right-column img {
+  max-width: 70%;   /* ← さらに小さくしたい場合ここ調整 */
+  height: auto;
+  margin-left: -200px;
+}
+
+/* その他微調整 */
+h1 {
+  font-weight: normal;
+  font-size: 4.5em;
+  margin-bottom: 1em;
+}
+
+.credit {
+  font-size: 0.65em; /* さらに小さめに */
+  text-align: right;
+  width: 100%;
+  margin-top: 8px;
+}
+
+ul.works {
+  list-style: none;
+  padding-left: 0;
+  font-size: 0.85em;
+}
+
+ul.works li {
+  margin-bottom: 6px;
+}
+
+ul.works a {
+  text-decoration: underline;
+  color: blue;
+}
+
+.mail {
+  margin-top: 32px;
+  font-size: 0.8em;
+}
+
+h1, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
