@@ -80,16 +80,21 @@ h1, p, ul, li {
   padding: 0;
 }
 
-/* スマホ表示対応 */
 @media (max-width: 768px) {
   html, body {
     overflow: hidden;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
   }
 
   .container {
     flex-direction: column;
     position: relative;
     overflow: hidden;
+    height: 100vh;
+    width: 100vw;
   }
 
   h1 {
@@ -106,17 +111,19 @@ h1, p, ul, li {
 
   .left-column {
     position: absolute;
-    top: -160px;
+    top: 0;
     left: 0;
     width: 100%;
-    height: calc(100vh - 60px);
-    padding: 16px;
+    height: calc(100vh - 80px); /* 高さ調整 */
+    padding: 100px 16px 16px 16px; /* ← h1の下に空ける！ */
     z-index: 1000;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     font-size: 9px;
     line-height: 1.4;
+    overflow: hidden;
+    box-sizing: border-box;
   }
 
   .right-column {
@@ -127,15 +134,18 @@ h1, p, ul, li {
     height: auto;
     z-index: 0;
     opacity: 1;
+    pointer-events: none;
   }
 
   .right-column img {
-    width: 300px;
+    width: 200px;
     height: auto;
     position: absolute;
     bottom: 8px;
     right: 8px;
     margin: 0;
+    object-fit: contain;
+    display: block;
   }
 
   .mail {
