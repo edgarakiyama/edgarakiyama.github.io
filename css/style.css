@@ -115,7 +115,7 @@ h1, p, ul, li {
     left: 0;
     width: 100%;
     height: calc(100vh - 80px); /* 高さ調整 */
-    padding: 100px 16px 16px 16px; /* ← h1の下に空ける！ */
+    padding: 50px 16px 16px 16px; /* ← h1の下に空ける！ */
     z-index: 1000;
     display: flex;
     flex-direction: column;
@@ -138,11 +138,11 @@ h1, p, ul, li {
   }
 
   .right-column img {
-    width: 200px;
+    width: 250px;
     height: auto;
     position: absolute;
-    bottom: 8px;
-    right: 8px;
+    bottom: -5px;
+    right: -10px;
     margin: 0;
     object-fit: contain;
     display: block;
