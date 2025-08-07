@@ -98,3 +98,87 @@ h1, p, ul, li {
   margin: 0;
   padding: 0;
 }
+
+
+@media (max-width: 768px) {
+  html, body {
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+  }
+
+  .container {
+    flex-direction: column;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+  }
+
+  .left-column {
+    position: absolute;
+    top: -160px; /* タイトルの分だけ上にずらす */
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 60px);
+    padding: 16px;
+    overflow: hidden;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 9px;
+    line-height: 1.4;
+  }
+
+  .right-column {
+    position: absolute;
+    top: 100;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    z-index: 0;
+    opacity: 1;
+  }
+
+  .right-column img {
+    max-width: 150%;
+    height: auto;
+    margin: 0;
+    position: absolute;
+    bottom: 1px;
+    right: -200px;
+  }
+
+  h1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 12px 16px;
+    background-color: transparent; /* 背景色を透過に */
+    z-index: 1001;
+    font-size: 4em;
+    margin: 0;
+  }
+
+  .mail {
+    font-size: 0.75em;
+  }
+
+  ul.works {
+    padding-left: 0;
+    list-style: none;
+  }
+
+  ul.works li {
+    margin-bottom: 4px;
+  }
+
+  ul.works a {
+    text-decoration: underline;
+    color: blue;
+  }
+}
