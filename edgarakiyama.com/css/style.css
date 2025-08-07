@@ -1,4 +1,3 @@
-/* フォント設定 */
 @font-face {
   font-family: 'GRyumin';
   src: url('../fonts/G-OTF-GRyuminPro-Light.otf') format('opentype');
@@ -13,30 +12,23 @@ html, body {
   height: 100vh;
   width: 100vw;
   box-sizing: border-box;
-}
-
-body {
   font-feature-settings: "kern";
   font-kerning: normal;
 }
 
-/* レイアウト全体 */
+/* 共通レイアウト */
 .container {
   display: flex;
   flex-direction: row;
   height: 100vh;
   width: 100vw;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
 }
 
 .left-column {
-  font-size: 12px;  /* ← ここで全体の文字サイズを小さく調整 */
+  font-size: 12px;
   line-height: 1.5;
   width: 50%;
-  padding-left: 24px; /* ← 左に少しスペースを追加 */
-  margin: 0;
+  padding-left: 24px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -44,34 +36,23 @@ body {
   overflow-y: auto;
 }
 
-/* 右カラム：調整 */
 .right-column {
   width: 50%;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-/* 画像サイズ調整 */
 .right-column img {
   width: 500px;
   height: auto;
   margin-left: -200px;
 }
 
-/* その他微調整 */
 h1 {
   font-weight: normal;
   font-size: 4.5em;
   margin-bottom: 1em;
-}
-
-.credit {
-  font-size: 0.65em; /* さらに小さめに */
-  text-align: right;
-  width: 100%;
-  margin-top: 8px;
 }
 
 ul.works {
@@ -99,32 +80,37 @@ h1, p, ul, li {
   padding: 0;
 }
 
-
+/* スマホ表示対応 */
 @media (max-width: 768px) {
   html, body {
     overflow: hidden;
-    height: 100vh;
-    width: 100vw;
-    margin: 0;
-    padding: 0;
   }
 
   .container {
     flex-direction: column;
     position: relative;
-    height: 100vh;
-    width: 100vw;
     overflow: hidden;
+  }
+
+  h1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 12px 16px;
+    background-color: transparent;
+    z-index: 1001;
+    font-size: 3em;
+    margin: 0;
   }
 
   .left-column {
     position: absolute;
-    top: -160px; /* タイトルの分だけ上にずらす */
+    top: 100px
     left: 0;
     width: 100%;
     height: calc(100vh - 60px);
     padding: 16px;
-    overflow: hidden;
     z-index: 1000;
     display: flex;
     flex-direction: column;
@@ -135,42 +121,25 @@ h1, p, ul, li {
 
   .right-column {
     position: absolute;
-    top: 100;
-    left: 0;
-    width: 50%;
-    height: 100%;
+    bottom: 0;
+    right: 0;
+    width: auto;
+    height: auto;
     z-index: 0;
     opacity: 1;
   }
 
   .right-column img {
-    max-width: 150%;
+    width: 200px;
     height: auto;
-    margin: 0;
     position: absolute;
-    bottom: 1px;
-    right: -200px;
-  }
-
-  h1 {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 12px 16px;
-    background-color: transparent; /* 背景色を透過に */
-    z-index: 1001;
-    font-size: 4em;
+    bottom: 8px;
+    right: 8px;
     margin: 0;
   }
 
   .mail {
     font-size: 0.75em;
-  }
-
-  ul.works {
-    padding-left: 0;
-    list-style: none;
   }
 
   ul.works li {
