@@ -55,7 +55,7 @@ body {
 
 /* 画像サイズ調整 */
 .right-column img {
-  width: 200px;
+  width: 500px;
   height: auto;
   margin-left: -200px;
 }
