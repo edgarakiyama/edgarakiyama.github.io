@@ -55,7 +55,7 @@ body {
 
 /* 画像サイズ調整 */
 .right-column img {
-  max-width: 70%;   /* ← さらに小さくしたい場合ここ調整 */
+  max-width: 20%;   /* ← さらに小さくしたい場合ここ調整 */
   height: auto;
   margin-left: -200px;
 }
