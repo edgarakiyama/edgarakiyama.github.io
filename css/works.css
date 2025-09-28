@@ -1,0 +1,170 @@
+@charset "utf-8";
+
+/*---------------------------------------------works---------------------------------------------*/
+
+/* 見出し_works */
+
+.contents-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+}
+
+.works-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 100vw;
+}
+
+.works-table {
+  z-index: 9999;
+  font-size: 12px;
+  border-collapse: collapse;
+  list-style: none;
+  margin-bottom: 6px;
+  margin-left: 56px;
+  margin-top: 60px;
+}
+
+.works-table td {
+  color: blue; /* 青字 */
+  padding: 0px 40px;
+  border-bottom: 1px solid #00f; /* 青い線 */
+}
+
+.works-table td {
+  color: blue; /* 青字 */
+  text-decoration: none; /* デフォルトの下線を消す */
+  border-bottom: 1px solid blue; /* 細い下線を追加 */
+  padding-bottom: 6px; /* 文字と線の間隔を少し開ける */
+  padding-top: 5px; /* 文字と線の間隔を少し開ける */
+}
+
+.works-table a {
+  position: relative; /* z-indexを効かせるために必要 */
+  z-index: 1000; /* 数字は大きいほど最前面 */
+  display: inline-block; /* 必要に応じてクリック範囲を確保 */
+  color: blue;
+  text-decoration: underline;
+}
+
+.works-table a {
+  color: blue;
+  text-decoration: none; /* ← まずは消す */
+}
+
+.works-table a:hover {
+  text-decoration: underline; /* ← ホバーしたときだけ出す */
+}
+
+header {
+  padding-top: 16px;
+  padding-left: 48px;
+}
+
+#logo {
+  font-size: 64px;
+  text-decoration: none;
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+.top-image {
+  position: sticky;
+  top: 0;
+  z-index: -9999;
+  width: 140%;
+  height: 100svh;
+  padding: 0;
+  margin-left: calc(10vw - 200px);
+}
+
+/* SVG を領域いっぱいにフィット */
+.top-image svg {
+  transition-duration: 500ms;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+.heading {
+  display: inline-block;
+  margin-top: 50px;
+  margin-left: 360px;
+  border-bottom: 1px solid var(--color-accent);
+  color: var(--color-accent);
+  font-size: 35px;
+}
+
+@media (max-width: 900px) {
+  .contents-wrapper {
+    min-width: auto;
+    display: block;
+  }
+
+  .works-wrapper {
+    margin: 0;
+    align-items: flex-start; /* 左揃えに変更 */
+  }
+
+  #logo {
+    width: 100vw;
+    text-align: center;
+  }
+
+  .top-image {
+    position: static;
+    top: 0;
+    z-index: -9999;
+    width: 100%;
+    height: auto;
+    padding-top: 24px;
+    margin: 0;
+  }
+
+  .top-image svg {
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+  }
+  .works-table {
+    width: 100%;
+    margin: 0;
+    margin-top: 40px;
+  }
+
+  .works-table td {
+    font-size: 12px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  tr td:last-child{
+    text-align: right;
+  }
+
+  .heading {
+    margin: 0;
+    margin-left: 60vw;
+    margin-top: 20px;
+    font-size: 24px;
+  }
+
+  .table-wrapper{
+    padding: 0 20px;
+    width:100%;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    padding-top: clamp(8px, 2vw, 20px);
+    padding-left: 0;
+  }
+
+  #logo {
+    font-size: clamp(10px, 9vw, 64px);
+    text-align: center;
+  }
+}
