@@ -11,13 +11,13 @@
 
 @keyframes svg-float {
   0% {
-    transform: translate3d(0, 3px, 0);
+    transform: translate3d(0, 0px, 0);
   }
   50% {
     transform: translate3d(0, -3px, 0);
   }
   100% {
-    transform: translate3d(0, 3px, 0);
+    transform: translate3d(0, 0px, 0);
   }
 }
 
@@ -28,18 +28,14 @@ svg path {
 
   /* 線を描く */
   animation: svg-draw var(--dur, 6s) ease-in-out forwards, svg-float 6s ease-in-out infinite;
-  /* 少し角を滑らかに */
+  
   stroke-linecap: round;
   stroke-linejoin: round;
 }
 
 /* 動きを弱めたい端末向け */
 @media (prefers-reduced-motion: reduce) {
-  #main-image .st1 {
-    animation: none;
-  }
-
-  #main-image .st0 {
+  #main-image path {
     animation: none;
   }
 }
