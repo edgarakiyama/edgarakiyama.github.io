@@ -130,12 +130,13 @@
 
   .about-text-container {
     width: 100%;
-    max-width:600px;
+    max-width: 600px;
     margin: 0;
     padding: 0 32px;
     font-feature-settings: 'palt' off;
-    font-size: 11px;
-    line-height: 1.9;
+    font-size: 10px;
+    -webkit-text-stroke: 0.05px;
+    line-height: 2;
     text-align: justify;
   }
 
@@ -173,7 +174,7 @@
     width: 100%;
     height: auto;
     padding: 40px;
-    margin:0;
+    margin: 0;
   }
 
   .top-image svg {
