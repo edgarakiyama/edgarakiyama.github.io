@@ -137,7 +137,7 @@ header {
 
   .works-table td {
     font-size: 10px;
-    padding: 4px 2em 5px 1.5em;
+    padding: 3px 2em 4px 1.5em;
     line-height: 1.4;
     font-feature-settings: 'palt';
     -webkit-text-stroke: var(--color-accent) 0.1px;
