@@ -43,3 +43,7 @@ header {
     text-align: center;
   }
 }
+
+@view-transition {
+  navigation: auto;
+}
