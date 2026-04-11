@@ -1,74 +1,40 @@
 <!DOCTYPE html>
-<html lang="ja">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/destyle.css" />
-    <link rel="stylesheet" href="css/common.css" />
-    <link rel="stylesheet" href="css/contact.css" />
-    <link rel="stylesheet" href="css/lineAnimation.css" />
-    <script type="module" src="./js/main.js" defer></script>
-    <link rel="icon" href="icon/edgarakiyama_icon.webp" type="image/png" />
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>edgarakiyama.com</title>
-    <meta name="description" content="edgarakiyama.com" />
-  </head>
+    <meta name="description" content="">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/png" href="./head_image/icon_image.png">
+</head>
 
-  <body>
-    <header>
-      <div id="logo">
-        <a href="index.html" rel="home"> edgarakiyama.com </a>
-      </div>
-    </header>
-    <h1>
-      <a class="heading" href="contact.html"> contact </a>
-    </h1>
+<div class="line-bottom_02"></div>
 
-    <ul class="contact_text">
-      <li>
-        <a href="mailto:edgarakiyama2003@gmail.com">Mail : edgarakiyama2003（at）gmail（dot）com</a>
-      </li>
-      <li>
-        <a href="https://www.instagram.com/edgar_akiyama/">Instagram : （at）edgar_akiyama</a>
-      </li>
-    </ul>
+<div class="about_midashi">
+  <a href="contact.html">*contact</a>
+</div>
 
-    <div
-      id="main-image"
-      data-path="/public/svg/Flower_line_01.svg"
-      data-base-delay="0"
-      data-delay-scale="0.05"
-      class="top-image"
-    ></div>
+<p class="title">
+  <a href="index.html">edgarakiyama.com</a>
+</p>
 
-    <script>
-      (function (d) {
-        var config = {
-            kitId: 'uzm0iyn',
-            scriptTimeout: 3000,
-            async: true,
-          },
-          h = d.documentElement,
-          t = setTimeout(function () {
-            h.className = h.className.replace(/\bwf-loading\b/g, '') + ' wf-inactive';
-          }, config.scriptTimeout),
-          tk = d.createElement('script'),
-          f = false,
-          s = d.getElementsByTagName('script')[0],
-          a;
-        h.className += ' wf-loading';
-        tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
-        tk.async = true;
-        tk.onload = tk.onreadystatechange = function () {
-          a = this.readyState;
-          if (f || (a && a != 'complete' && a != 'loaded')) return;
-          f = true;
-          clearTimeout(t);
-          try {
-            Typekit.load(config);
-          } catch (e) {}
-        };
-        s.parentNode.insertBefore(tk, s);
-      })(document);
-    </script>
-  </body>
+<p class="contact_text">
+email <br>
+<a href="mailto:edgarakiyama.jp@gmail.com">
+  edgarakiyama(dot)jp(at)gmail(dot)com
+</a><br>
+<br>
+＊<br>
+<br>
+instagram<br>
+<a href="https://www.instagram.com/edgar_akiyama/" target="_blank" rel="noopener noreferrer">
+  @edgar_akiyama
+</a><br>
+<br>
+<br>
+<span class="abour-label">Copyright © 2026 Edgar Akiyama all rights reserved</span></p>
+
+<img src="./head_image/contact_image.png" class="about_image" alt="profile">
+
 </html>

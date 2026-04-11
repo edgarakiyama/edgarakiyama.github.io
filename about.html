@@ -1,82 +1,44 @@
 <!DOCTYPE html>
-<html lang="ja">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/destyle.css" />
-    <link rel="stylesheet" href="css/common.css" />
-    <link rel="stylesheet" href="css/about.css" />
-    <link rel="stylesheet" href="css/lineAnimation.css" />
-    <script type="module" src="./js/main.js" defer></script>
-    <link rel="icon" href="icon/edgarakiyama_icon.webp" type="image/png" />
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>edgarakiyama.com</title>
-    <meta name="description" content="edgarakiyama.com" />
-  </head>
+    <meta name="description" content="">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/png" href="./head_image/icon_image.png">
+</head>
 
-  <body>
-    <div class="contents-wrapper">
-      <div class="about-wrapper">
-        <header>
-          <div id="logo">
-            <a href="index.html" rel="home"> edgarakiyama.com </a>
-          </div>
-        </header>
-        <div class="about__upper">
-          <img src="images/about_prof.webp" class="about_prof" alt="edgarakiyamaの顔写真"/>
-          <h1>
-            <a class="heading" href="about.html"> about </a>
-          </h1>
-        </div>
-        <div class="about-text-container">
-          <p class="about-text__specialty_01">Design / Art / Photograph</p>
-          <p class="about-text__name">秋山 エドガル</p>
-          <p class="about-text__detail">静岡県生まれ｡多摩美術大学美術学部統合デザイン学科卒業。</p>
-          <p class="about-text__text">
-            最近はグラフィックデザインをしています。写真とか彫刻も。<br />
-            あそびは､創作においてとても大事なもののように思えます。居酒屋のおしぼりを綺麗に畳むとか､遠くの雲をみてぼーっとするのもまたあそび。ささやかなゆとりが、幾重にも凝縮、圧縮され､やがて結晶化し､心をもったものが出現する。ものってそういうもの｡<br />
-            毎日昼寝ができるくらいの隙間に、集めた宝石とかお菓子とかをぎゅうぎゅうに詰めて､あなたに届けちゃったりする。<br />
-          </p>
-          <p class="about-text__specialty_02">Design / Art / Photograph</p>
-        </div>
-      </div>
-      <div
-        id="main-image"
-        data-path="/public/svg/Bird_line_03.svg"
-        data-base-delay="0"
-        data-delay-scale="0.05"
-        class="top-image"
-      ></div>
-    </div>
+<div class="line-bottom_02"></div>
 
-    <script>
-      (function (d) {
-        var config = {
-            kitId: 'uzm0iyn',
-            scriptTimeout: 3000,
-            async: true,
-          },
-          h = d.documentElement,
-          t = setTimeout(function () {
-            h.className = h.className.replace(/\bwf-loading\b/g, '') + ' wf-inactive';
-          }, config.scriptTimeout),
-          tk = d.createElement('script'),
-          f = false,
-          s = d.getElementsByTagName('script')[0],
-          a;
-        h.className += ' wf-loading';
-        tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
-        tk.async = true;
-        tk.onload = tk.onreadystatechange = function () {
-          a = this.readyState;
-          if (f || (a && a != 'complete' && a != 'loaded')) return;
-          f = true;
-          clearTimeout(t);
-          try {
-            Typekit.load(config);
-          } catch (e) {}
-        };
-        s.parentNode.insertBefore(tk, s);
-      })(document);
-    </script>
-  </body>
+<div class="about_midashi">
+  <a href="about.html">*about</a>
+</div>
+
+<p class="title">
+  <a href="index.html">edgarakiyama.com</a>
+</p>
+
+<p class="about_text">
+Profile<br>
+<br>
+秋山エドガル　Edgar Akiyama<br>
+<br>
+＊<br>
+<br>
+日本のグラフィックデザイナー/女たらしなど。２００３年生まれ、静岡県出身。多摩美術大学を卒業。印刷美術やインテリア、舞台出演など、多岐にわたる作品を制作。<br>
+<br>
+A Japanese graphic designer/womanizer. Born in 2003 in Shizuoka, Japan. Graduated from Tama Art University. Produces a wide range of works spanning print-based art, interior design, and stage performance.<br>
+ <br>
+＊<br>
+ <br>
+最近、「パティシエ」という言葉が思い浮かばなかったので、「お菓子づくらー」という言葉で代用しました。言葉なんてなんでもいいんです。<br>
+<br>
+Recently, I couldn’t think of the word “pâtissier,” so I used “sweet-maker” instead. Words can be anything.<br>
+<br>
+<br>
+<span class="abour-label">Copyright © 2026 Edgar Akiyama all rights reserved</span></p>
+
+<img src="./head_image/about_image.png" class="about_image" alt="profile">
+
 </html>
