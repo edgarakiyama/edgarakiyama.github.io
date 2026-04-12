@@ -7,6 +7,18 @@
   src: url('./fonts/G-OTF-GRyuminPro-Light.otf') format('opentype');
 }
 
+body {
+  opacity: 0;
+  animation: fadeIn 1.5s ease forwards;
+  
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
 html, body {
   overflow-x: hidden;
   overflow-y: auto;
@@ -34,6 +46,8 @@ html, body {
 
 .midashi a {
   display: block;
+  position: relative; /* ← 追加 */
+
   font-family: 'GRyumin', serif;
   font-size: 35px;
   line-height: 1;
@@ -41,6 +55,25 @@ html, body {
   color: black;
   text-decoration: none;
   font-feature-settings: "palt";
+}
+
+/* 下線 */
+.midashi a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+
+  width: 0;
+  height: 1.5px;
+  background: #000;
+
+  transition: width 0.2s ease;
+}
+
+/* ホバーで出る */
+.midashi a:hover::after {
+  width: 100%;
 }
 
 
