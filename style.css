@@ -153,9 +153,104 @@ html, body {
 .top_tag a {
   text-decoration: none;
   color: #000;
+
+
+
 }
 
+/* top　PC */
 
+@media screen and (min-width: 900px) {
+
+html,
+
+body{
+
+    width:100%;
+    max-width:none;
+    margin:0;
+
+}
+
+/* ロゴ */
+
+.title a{
+
+    top:-15px;
+    left:10px;
+    font-size:50px;
+    z-index: 9999;
+
+}
+
+/* TOP */
+
+.top_tag{
+
+    top:10px;
+    right:50px;
+    left:auto;
+    width:auto;
+    font-size:20px;
+    z-index: 9999;
+
+}
+
+/* 見出し */
+
+.midashi{
+    margin:380px 0 0 10px;
+}
+
+.midashi a{
+    font-size:72px;
+    line-height:0.95;
+}
+
+/* 線 */
+
+.line-bottom{
+
+    top:610px;   /* ← 下へ60px */
+    left:10px;
+    width:calc(100% - 20px);
+
+}
+
+/* テキスト */
+
+.log{
+
+    margin-top:600px;
+
+    margin-left:10px;
+
+    margin-right:10px;
+
+    width:auto;
+
+    font-size:12px;
+
+    line-height:1.5;
+
+}
+
+/* SVG */
+
+.line-svg{
+
+    position:absolute;
+
+    top: 30px;
+
+    left:70%;
+
+    transform:translateX(-50%);
+
+    width:520px;
+
+}
+}
 
 /*about css*/
 
@@ -215,6 +310,70 @@ html, body {
   height: auto;
 }
 
+
+/*about css PC */
+
+@media screen and (min-width: 900px) {
+
+  .line-bottom_02{
+    position: fixed;
+    top: 80px;
+    left: 10px;
+    width: calc(100% - 20px);
+    height: 1.3px;
+    background: #000;
+    z-index: 9999;
+
+}
+
+  .about_midashi{
+    top:95px;
+    left:10px;
+    font-size:60px;
+
+  }
+
+  .about_text{
+
+    position:absolute;
+    margin:300px 40px 100px 20px;
+    width:calc(100% - 60px);
+
+    /* ↓スマホと同じ */
+
+    font-family:'GRyumin', serif;
+    font-size:12px;
+    line-height:1.3;
+    color:#0000ff;
+    margin: 300px 100px 100px 10px;
+    text-align: justify;
+    text-align-last: left;
+    position: absolute;
+    letter-spacing: -0.05em;
+    width: 280px;
+    font-feature-settings: "palt";
+
+  }
+
+  .abour-label{
+    font-size:11px;
+  }
+
+  .about_image{
+    position:absolute;
+    top:200px;
+    right:500px;
+    margin:0;
+    width:220px;
+    height:auto;
+  }
+
+}
+
+
+
+
+
 /*contact css*/
 
 .contact_text {
@@ -229,6 +388,38 @@ html, body {
     letter-spacing: -0.05em;
     width: 270px;
     font-feature-settings: "palt";
+}
+
+@media screen and (min-width: 900px) {
+
+  .contact_text{
+
+    position:absolute;
+
+    margin:300px 10px 100px;
+
+    width:calc(100% - 40px);
+
+    /* スマホ版と同じ設定 */
+
+    font-family:'GRyumin', serif;
+
+    font-size:12px;
+
+    line-height:1.3;
+
+    color:#0000ff;
+
+    text-align:justify;
+
+    text-align-last:left;
+
+    letter-spacing:-0.05em;
+
+    font-feature-settings:"palt";
+
+  }
+
 }
 
 
@@ -278,4 +469,181 @@ html, body {
   to {
     stroke-dashoffset: 0;
   }
+}
+
+
+
+
+
+
+
+
+/* ==========================
+   WORKS
+========================== */
+
+.works_index{
+    position:absolute;
+    margin:300px 100px 100px 2px;
+    width:280px;
+
+    font-family:'GRyumin', serif;
+    font-size:12px;
+    line-height:1.3;
+    color:#0000ff;
+    letter-spacing:-0.05em;
+    text-align:justify;
+    text-align-last:left;
+    font-feature-settings:"palt";
+}
+
+.works{
+    width:100%;
+    padding:70px 2px 2px;
+    box-sizing:border-box;
+}
+
+.work{
+    display:block;
+    margin-bottom:8px;
+    text-decoration:none;
+    color:#000;
+}
+
+.work img{
+    display:block;
+    width:100%;
+    height:auto;
+    transition:opacity .25s ease;
+}
+
+.work:hover img{
+    opacity:.8;
+}
+
+.work p{
+    margin:10px 0 0;
+    font-size:14px;
+    line-height:1.5;
+}
+
+
+/* ==========================
+   PC
+========================== */
+
+@media screen and (min-width:900px){
+
+    .works_index{
+        position: static;
+        margin: 120px 20px 40px;
+        width: auto;
+    }
+
+    .works{
+        position: relative;
+        width: calc(100% - 20px);
+        margin: 90px auto 40px;
+        padding: 0;
+    }
+
+    .work{
+        width: calc((100% - 20px) / 3); /* 10px × 2 */
+        margin-bottom: 10px;
+    }
+
+    .work p{
+        font-size: 12px;
+        line-height: 1.3;
+        margin-top: 8px;
+    }
+
+}
+
+/* works_list */
+
+body{
+    margin:0;
+    background:#fff;
+}
+
+.project{
+    padding:70px 2px 2px;
+}
+
+.project img{
+    display:block;
+    width:100%;
+    height:auto;
+    margin-bottom:7px;
+}
+
+.project img:last-child{
+    margin-bottom:0;
+}
+
+.project-info{
+    width: calc(100% - 40px);
+    margin: 10px 2px 120px;
+    font-size: 13px;
+    font-family: 'GRyumin', serif;
+    font-size: 12px;
+    line-height: 1.3;
+    color: #000000;
+    padding:0px 2px 2px;
+    text-align: justify;
+    font-feature-settings: "palt";
+}
+
+.info-row{
+    display:grid;
+    grid-template-columns:110px 1fr;
+    gap:24px;
+    margin-bottom:18px;
+    line-height:1.7;
+
+}
+
+/* ==========================
+   WORKS LIST（PC）
+========================== */
+
+@media screen and (min-width:900px){
+
+  .project{
+    width:800px;
+    padding-top:80px;
+    padding-left:10px;
+    padding-right:0;
+    padding-bottom:0;
+    box-sizing:border-box;
+  }
+
+  .project img{
+    display:block;
+    width:100%;
+    height:auto;
+    margin-bottom:10px;
+  }
+
+  .project-info{
+    width:600px;
+    margin:px 0 120px 10px;
+    padding:0;
+
+    font-family:'GRyumin', serif;
+    font-size:12px;
+    line-height:1.3;
+    color:#000;
+    font-feature-settings:"palt";
+  }
+
+  .info-row{
+    display:grid;
+    grid-template-columns:110px 1fr;
+    gap:24px;
+    margin-bottom:18px;
+    line-height:1.7;
+  }
+
 }
