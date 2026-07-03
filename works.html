@@ -61,6 +61,14 @@
         <img src="./works_list/works_image/Super 2026_01.jpg" alt="">
     </a>
 
+    <a class="work" href="works_list/GS'25-ver2-poster.html">
+        <img src="./works_list/works_image/GS'25-ver2-poster_01.jpg" alt="">
+    </a>
+
+    <a class="work" href="works_list/GS'25-book.html">
+        <img src="./works_list/works_image/GS'25-image_01.jpg" alt="">
+    </a>
+
      <a class="work" href="works_list/The-grass,-the-shapes and-what-will-become.html">
         <img src="./works_list/works_image/The-grass,-the-shapes and-what-will-become_01.jpg" alt="">
     </a>
@@ -72,39 +80,49 @@
 
 <script>
 
-if(window.matchMedia("(min-width:900px)").matches){
+const script1 = document.createElement("script");
+script1.src = "https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js";
 
-    const script1=document.createElement("script");
-    script1.src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js";
+script1.onload = () => {
 
-    script1.onload=()=>{
+    const script2 = document.createElement("script");
+    script2.src = "https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js";
 
-        const script2=document.createElement("script");
-        script2.src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js";
+    script2.onload = () => {
 
-        script2.onload=()=>{
+        imagesLoaded(".works", function () {
 
-            imagesLoaded(".works",function(){
+            if (window.innerWidth >= 900) {
 
-                new Masonry(".works",{
-
-                    itemSelector:".work",
-                    gutter:10,
-                    percentPosition:true
-
+                // PC：3列
+                new Masonry(".works", {
+                    itemSelector: ".work",
+                    columnWidth: ".work",
+                    gutter: 10,
+                    percentPosition: true
                 });
 
-            });
+            } else {
 
-        };
+                // スマホ：2列
+                new Masonry(".works", {
+                    itemSelector: ".work",
+                    columnWidth: ".work",
+                    gutter: 7,
+                    percentPosition: true
+                });
 
-        document.body.appendChild(script2);
+            }
+
+        });
 
     };
 
-    document.body.appendChild(script1);
+    document.body.appendChild(script2);
 
-}
+};
+
+document.body.appendChild(script1);
 
 </script>
 
