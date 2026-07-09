@@ -293,14 +293,14 @@ body{
   text-decoration: none;
 }
 
-.line-bottom_02 {
-  position: fixed;
-  top: 70px;
-  left: 6px;
-
-  width: 373px;
-  height: 1.3px;
-  background-color: #000;
+.line-bottom_02{
+    position: fixed;
+    top: 62px;
+    left: 6px;
+    width: calc(100% - 12px);
+    height: 1.3px;
+    background: #000;
+    z-index: 9999;
 }
 
 .about_image {
@@ -502,7 +502,7 @@ body{
 .works{
     position:relative;
     width:calc(100% - 2px);   /* 左右2pxずつ */
-    margin:80px auto 0;
+    margin:71px auto 0;
     padding:0;
     box-sizing:border-box;
     z-index:-1;               /* ← 作品一覧を背面へ */
