@@ -105,6 +105,17 @@ html, body {
   font-feature-settings: "palt";
 }
 
+.log a {
+
+  color: inherit;          /* 親要素と同じ色にする */
+  text-decoration: none;   /* 下線を消す */
+
+}
+
+.log a:hover {
+  text-decoration: none;   /* ホバー時も下線を表示しない */
+}
+
 .line-svg {
   position: absolute;
   top: 60px;
@@ -220,19 +231,21 @@ body{
 /* テキスト */
 
 .log{
-
     margin-top:600px;
-
     margin-left:10px;
-
     margin-right:10px;
-
     width:auto;
-
     font-size:12px;
-
     line-height:1.5;
+}
 
+.log a {
+  color: inherit;          /* 親要素と同じ色にする */
+  text-decoration: none;   /* 下線を消す */
+}
+
+.log a:hover {
+  text-decoration: none;   /* ホバー時も下線を表示しない */
 }
 
 /* SVG */
@@ -635,7 +648,7 @@ body{
 
   .project{
     width:800px;
-    padding-top:80px;
+    padding-top:93px;
     padding-left:10px;
     padding-right:0;
     padding-bottom:0;
