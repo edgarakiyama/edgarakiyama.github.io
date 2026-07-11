@@ -245,7 +245,7 @@ body{
 /* SVG */
 
 .line-svg{
-    top: -570px;
+    top: 50px;
     left: 1050px;
     transform:translateX(-50%);
     width:760px;
