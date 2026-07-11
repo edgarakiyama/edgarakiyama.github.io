@@ -176,35 +176,29 @@ html, body {
 html,
 
 body{
-
     width:100%;
     max-width:none;
     margin:0;
-
 }
 
 /* ロゴ */
 
 .title a{
-
     top:-15px;
     left:10px;
     font-size:50px;
     z-index: 9999;
-
 }
 
 /* TOP */
 
 .top_tag{
-
     top:10px;
     right:50px;
     left:auto;
     width:auto;
     font-size:20px;
     z-index: 9999;
-
 }
 
 /* 見出し */
@@ -221,11 +215,11 @@ body{
 /* 線 */
 
 .line-bottom{
-
-    top:595px;   /* ← 下へ60px */
-    left:10px;
-    width:calc(100% - 20px);
-
+    position:static;
+    width:calc(100% - 960px);
+    height:1.3px;
+    margin:200px 950px 0 4px;
+    background:#000;
 }
 
 /* テキスト */
@@ -233,7 +227,7 @@ body{
 .log{
     margin-top:600px;
     margin-left:10px;
-    margin-right:10px;
+    margin-right:950px;
     width:auto;
     font-size:12px;
     line-height:1.5;
@@ -251,19 +245,19 @@ body{
 /* SVG */
 
 .line-svg{
-
-    position:absolute;
-
-    top: 30px;
-
-    left:70%;
-
+    top: -570px;
+    left: 1050px;
     transform:translateX(-50%);
-
-    width:520px;
+    width:760px;
 
 }
 }
+
+
+
+
+
+
 
 /*about css*/
 
